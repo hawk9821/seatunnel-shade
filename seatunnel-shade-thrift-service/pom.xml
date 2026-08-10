@@ -30,6 +30,10 @@
     <version>${thrift-service.version}-${seatunnel.shade.version}</version>
     <name>SeaTunnel : Shade : Thrift-Service</name>
 
+    <properties>
+        <thrift-service.version>1.0.1</thrift-service.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.apache.doris</groupId>
