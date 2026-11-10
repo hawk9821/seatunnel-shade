@@ -27,7 +27,6 @@
     </parent>
 
     <artifactId>seatunnel-shade-hadoop-aws</artifactId>
-    <version>${hadoop-aws.version}-${seatunnel.shade.version}</version>
     <name>SeaTunnel : Shade : Hadoop : AWS</name>
 
     <dependencies>
@@ -39,6 +38,7 @@
     </dependencies>
 
     <build>
+        <finalName>${artifactId}-${hadoop-aws.version}-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

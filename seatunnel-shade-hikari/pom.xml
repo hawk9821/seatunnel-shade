@@ -27,7 +27,6 @@
     </parent>
 
     <artifactId>seatunnel-shade-hikari</artifactId>
-    <version>${hikari.version}-${seatunnel.shade.version}</version>
     <name>SeaTunnel : Shade : Hikari</name>
 
     <dependencies>
@@ -39,6 +38,7 @@
     </dependencies>
 
     <build>
+        <finalName>${artifactId}-${hikari.version}-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

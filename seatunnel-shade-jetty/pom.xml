@@ -27,7 +27,6 @@
     </parent>
 
     <artifactId>seatunnel-shade-jetty</artifactId>
-    <version>${jetty.version}-${seatunnel.shade.version}</version>
     <name>SeaTunnel : Shade : Jetty</name>
 
     <dependencies>
@@ -44,6 +43,7 @@
     </dependencies>
 
     <build>
+        <finalName>${artifactId}-${jetty.version}-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

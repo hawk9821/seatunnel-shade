@@ -27,7 +27,6 @@
     </parent>
 
     <artifactId>seatunnel-shade-arrow</artifactId>
-    <version>${arrow.version}-${seatunnel.shade.version}</version>
     <name>SeaTunnel : Shade : Arrow</name>
 
     <dependencies>
@@ -44,6 +43,7 @@
     </dependencies>
 
     <build>
+        <finalName>${artifactId}-${arrow.version}-${project.version}</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-shade-plugin</artifactId>

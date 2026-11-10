@@ -33,7 +33,6 @@
     </properties>
 
     <artifactId>seatunnel-shade-scala-compiler</artifactId>
-    <version>${scala-compiler.version}-${seatunnel.shade.version}</version>
     <name>SeaTunnel : Shade : Scala</name>
 
     <dependencies>
@@ -45,6 +44,7 @@
     </dependencies>
 
     <build>
+        <finalName>${artifactId}-${scala-compiler.version}-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

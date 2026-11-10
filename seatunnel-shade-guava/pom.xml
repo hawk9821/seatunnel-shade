@@ -27,7 +27,6 @@
     </parent>
 
     <artifactId>seatunnel-shade-guava</artifactId>
-    <version>${guava.version}-${seatunnel.shade.version}</version>
     <name>SeaTunnel : Shade : Guava</name>
 
     <dependencies>
@@ -39,6 +38,7 @@
     </dependencies>
 
     <build>
+        <finalName>${artifactId}-${guava.version}-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

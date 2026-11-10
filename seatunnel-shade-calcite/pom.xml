@@ -27,7 +27,6 @@
     </parent>
 
     <artifactId>seatunnel-shade-calcite</artifactId>
-    <version>${calcite.version}-${seatunnel.shade.version}</version>
     <name>SeaTunnel : Shade : Calcite</name>
 
 
@@ -54,6 +53,7 @@
     </dependencies>
 
     <build>
+        <finalName>${artifactId}-${calcite.version}-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

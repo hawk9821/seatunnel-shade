@@ -28,7 +28,6 @@
     </parent>
 
     <artifactId>seatunnel-shade-janino</artifactId>
-    <version>${janino.verion}-${seatunnel.shade.version}</version>
     <name>SeaTunnel : Shade : Janino</name>
 
     <dependencies>
@@ -41,6 +40,7 @@
     </dependencies>
 
     <build>
+        <finalName>${artifactId}-${janino.verion}-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

@@ -23,7 +23,6 @@
     </parent>
 
     <artifactId>seatunnel-shade-jackson-yaml</artifactId>
-    <version>${jackson.version}-${seatunnel.shade.version}</version>
     <name>SeaTunnel : Shade : Jackson YAML</name>
 
     <dependencies>
@@ -50,6 +49,7 @@
     </dependencies>
 
     <build>
+        <finalName>${artifactId}-${jackson.version}-${project.version}</finalName>
         <plugins>
             <!-- Keep optional shaded dependencies visible to the license dependency check. -->
             <plugin>

@@ -28,7 +28,6 @@
 
     <artifactId>seatunnel-shade-jackson</artifactId>
 
-    <version>${jackson.version}-${seatunnel.shade.version}</version>
     <name>SeaTunnel : Shade : Jackson</name>
 
     <dependencies>
@@ -72,6 +71,7 @@
     </dependencies>
 
     <build>
+        <finalName>${artifactId}-${jackson.version}-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

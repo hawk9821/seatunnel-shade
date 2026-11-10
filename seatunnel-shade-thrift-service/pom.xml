@@ -27,7 +27,6 @@
     </parent>
 
     <artifactId>seatunnel-shade-thrift-service</artifactId>
-    <version>${thrift-service.version}-${seatunnel.shade.version}</version>
     <name>SeaTunnel : Shade : Thrift-Service</name>
 
     <dependencies>
@@ -39,6 +38,7 @@
     </dependencies>
 
     <build>
+        <finalName>${artifactId}-${thrift-service.version}-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

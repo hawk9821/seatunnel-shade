@@ -27,7 +27,6 @@
     </parent>
 
     <artifactId>seatunnel-shade-hadoop3-uber</artifactId>
-    <version>${hadoop3.version}-${seatunnel.shade.version}</version>
     <name>SeaTunnel : Shade : Hadoop3 Uber</name>
 
     <dependencyManagement>
@@ -51,6 +50,7 @@
     </dependencies>
 
     <build>
+        <finalName>${artifactId}-${hadoop3.version}-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
